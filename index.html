@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Главная</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<form id="form">
+    <div id="map-container" oninput="display('#login-container')"></div>
+    <div class="hidden" id="login-container">
+        <label for="login">Имя</label>
+        <input type="text" name="login" placeholder="Введите имя" id="login" oninput="display('#play-button', 3, '#login'); choseMap('#login')" minlength="3" class="onchange">
+    </div>
+    <a id="play-button" class="hidden" href="#" onclick="play()">Играть</a>
+
+</form>
+<script src="js/jquery-3.6.0.min.js">
+    localStorage.clear();
+</script>
+<script src="js/index.js"></script>
+</body>
+</html>

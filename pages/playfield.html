@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Главная</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .data {
+            position: absolute;
+            color: white;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container" class="hidden">
+    <div id='player'>
+    </div>
+    <div class="data">
+        <span id="login"></span>
+        <span id="time"></span>
+        <span id="timer"><span id="text"></span><span id="min"></span>:<span id="sec"></span></span>
+        <span id="lives"></span>
+
+    </div>
+</div>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/play.js"></script>
+</body>
+</html>
